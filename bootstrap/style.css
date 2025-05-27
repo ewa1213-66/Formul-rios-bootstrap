@@ -1,0 +1,38 @@
+  span {
+      color: #00eeff;
+      font-weight: bold;
+
+  }
+
+  .conteiner {
+      width: 40%;
+      margin: auto;
+      padding: 20px;
+      background-color: #c7c6c6;
+      border-radius: 25px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.336);
+
+
+
+  }
+
+  .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #00eeff;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+
+
+  }
+
+  body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      color: #333;
+
+
+  }
