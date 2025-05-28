@@ -5,12 +5,12 @@
   }
 
   .conteiner {
-      width: 40%;
+      width: 60%;
       margin: auto;
       padding: 20px;
       background-color: #c7c6c6;
       border-radius: 25px;
-      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.336);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
 
 
 
@@ -33,6 +33,12 @@
       background-color: white;
       font-family: Arial, sans-serif;
       color: #333;
+      
 
-
+  }
+  .titulo {
+      text-align: center;
+      
+      color: #000000;
+      margin-bottom: 20px;
   }

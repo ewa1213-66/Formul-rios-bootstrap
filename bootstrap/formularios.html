@@ -19,26 +19,21 @@
     <!-- o conteiner ajusta para o uso de 70% da pagina e o py é o padding vertical -->
     <div class="conteiner py-5">
         <!-- mb= margi-button -->
-        <h2 class="mb-3">Formularios</h2>
-        <p><span> Guia Basico</span> de formularios </p>
-        <!--metod= qual verbo http ele vai usar  -->
-        <form action="" method="post"></form>
-
+        <div class="titulo">
+            <h2 class="mb-3">Formularios</h2>
+            <p><span> Guia Basico</span> de formularios </p>
+        </div>
+            <!--metod= qual verbo http ele vai usar  -->
+            <form action="" method="post"></form>
         <div class="mb-3">
             <!-- o rotulo -->
 
-            <label for="" class="form-label">Texto</label>
-            <!-- compo do formulario -->
+            <label for="" class="form-label">Nome</label>
+            <!-- corpo do formulario -->
             <!-- requirent para campos obrigatorio-->
-            <input type="text" class="form-control" id="text" name="text" placeholder="Digite seu texto" required>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Digite seu nome" required>
 
 
-        </div>
-
-        <!-- senha -->
-        <div class="mb-3">
-            <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
         </div>
 
         <!-- e-mail -->
@@ -48,9 +43,15 @@
 
         </div>
 
+        <!-- senha -->
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+
         <!-- numero -->
         <div class="mb-3">
-            <label for="nomero" class="form-label">Numero</label>
+            <label for="numero" class="form-label">Numero</label>
             <input type="number" class="form-control" id="number" min="0" max="100" value="50" step="0.5" name="number"
                 placeholder="Digite seu numero" required>
 
@@ -75,7 +76,28 @@
         </div>
 
         <!-- selecione -->
-        
+        <div class="mb-3">
+            <label for="select" class="form-label">Selecione</label>
+            <select class="form-select" id="select" name="select" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+        </div>
+
+        <!-- radio -->
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="RadioGroup" id="radio1" value="opcao1" checked>
+            <label for="radio1" class="form-check-label">Opção 1</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="RadioGroup" id="radio1" value="opcao2" checked>
+            <label for="radio2" class="form-check-label">Opção 2</label>
+        </div>
+
         <!-- checkbox -->
         <div class="mb-3">
             <label for="checkbox" class="form-label">Checkbox</label>
@@ -111,10 +133,14 @@
                     placeholder="Digite seu texto longo">
                 </textarea>
             </div>
-            
 
+            <!-- bottons -->
             <div>
-                <button type="submit" class="button">Enviar</button>
+                <center>
+                    <button type="submit" class="button">Enviar</button>
+                    <button type="reset" class="button">Limpar</button>
+                    <!-- <button type="button" class="button">Qualquer ação</button> -->
+                </center>
             </div>
         </div>
 
@@ -136,5 +162,6 @@
             </script>
 
 </body>
+
 
 </html>
